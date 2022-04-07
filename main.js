@@ -22,3 +22,12 @@ function menutoggle(){
         MenuItems.style.maxHeight = "0px";
     }
 }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/serviceworker.js')
+  .then((registration) => {
+  console.log("service worker registered")
+  })
+  .catch((err) => {
+  console.log("sw registraration "+ err)
+  });
+  } 
