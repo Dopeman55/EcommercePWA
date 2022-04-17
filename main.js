@@ -23,11 +23,11 @@ function menutoggle(){
     }
 }
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/serviceworker.js')
+  navigator.serviceWorker.register('https://dopeman55.github.io/EcommercePWA/serviceworker.js')
   .then((registration) => {
   console.log("service worker registered")
   })
   .catch((err) => {
   console.log("sw registraration "+ err)
   });
-  } 
+  }
